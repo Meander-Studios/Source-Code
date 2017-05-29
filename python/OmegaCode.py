@@ -18,3 +18,9 @@ def emailVerification(email):
             return False
     else:
         return False
+def reverse(string):
+    x = ""
+    for i in range(len(string)):
+        x = x + string[len(string)-(1 + i)]
+    return x
+def inside(array,)
