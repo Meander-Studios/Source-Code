@@ -21,8 +21,20 @@ def dome(offset1, offset2, string):
     for y in range(0,len(inpu)):
         """ Concatenates outpu and encrypted outpu """
         offset = offset2 * y + offset1 
-        print("run ", y, " offset is ", offset)
+        #print("run ", y, " offset is ", offset)
         cipher = encrypt(cipher, offset)
         output = output + cipher[inpu[y:y + 1]]
     
-    print(output)
+    return output
+    
+def composite(num):
+    for n in range(2, num // 2 + 1):
+        if num % n == 0:
+            return True
+    return False
+
+def prime(num):
+    for n in range(2, num // 2 + 1):
+        if num % n == 0:
+            return False
+    return True
