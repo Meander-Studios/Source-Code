@@ -7,4 +7,4 @@ Created on Mon May 29 17:48:13 2017
 
 import omegacode2
 
-print(omegacode2.prime(3))
+print(omegacode2.prime(11))
