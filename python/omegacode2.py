@@ -38,3 +38,40 @@ def prime(num):
         if num % n == 0:
             return False
     return True
+
+def filter(unrefined_list, op, num):
+    new_list = []
+    for i in unrefined_list:
+        if op == "==":
+            if i == num:
+                new_list.append(i)
+        elif op == ">":
+            if i > num:
+                new_list.append(i)
+        elif op == ">=":
+            if i >= num:
+                new_list.append(i)
+        elif op == "<":
+            if i < num:
+                new_list.append(i)
+        elif op == "<=":
+            if i <= num:
+                new_list.append(i)
+        elif op == "multiple":
+            if i % num == 0:
+                new_list.append(i)
+        elif op == "factor":
+            if num % i == 0:
+                new_list.append(i)
+        """ elif op == "power":
+            going = True
+            new_num = num
+            while going:
+                if new_num > i:
+                    going = False
+            if new_num != i:
+                new_num = new_num ** 2
+            else:
+                new_list.append(i) """
+                
+    return new_list
