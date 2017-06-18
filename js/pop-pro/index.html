@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Pop Pro</title>
+	<link rel='stylesheet' type='text/css' href='poppro.css'>
+	<script type='text/javascript' src='jquery.min.js'></script>
+	<script type='text/javascript' src='poppro.js'></script>
+</head>
+
+<body>
+<div class='regularPopUp'>
+<script>
+alert($(".regularPopUp").width());
+$(".regularPopUp").css("margin-left",(((window.width-($(".regularPopUp").width()))/2)+"px"));
+$(".regularPopUp").css("margin-right",((parseInt(window.width-($(".regularPopUp").width()))/2)+"px"));
+</script>
+<p>hey</p>
+</div>
+</body>
+
+</html>
