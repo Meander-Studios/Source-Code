@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type='text/javascript' src='jquery.min.js'></script>
+	<script type='text/javascript' src='dropdowns.js'></script>
+</head>
+
+<body>
+	
+	<section style="background-color: red; color: white;">
+	<h1>Toggle-able with slide animation, with click, and the toggle-able section is initiality not displayed</h1>
+	<a style="color: inherit;" href="#" id='button1'>Click Me!</a>
+	<ul id='section1'>
+	<li>This is awesome, right!</li>
+	<li>Here's the Code: <code>dropdownClick("Your Selector","Your Toggle-able Section",true,false);</code></li>
+	</ul>
+	<script type='text/javascript'>dropdownClick("#button1","#section1",true,false);</script>
+	</section>
+	<section style="background-color: green; color: white;">
+	<h1>Toggle-able without animation, with hover, and the toggle-able section is initiality displayed</h1>
+	<a style="color: inherit;" href="#" id='button2'>Hover Me!</a>
+	<ul id='section2'>
+	<li>This is awesome, right!</li>
+	<li>Here's the Code: <code>dropdownHover("Your Selector","Your Toggle-able Section",false,true);</code></li>
+	</ul>
+	<script type='text/javascript'>dropdownHover("#button2","#section2",false,true);</script>
+	</section>
+	<section style="background-color: yellow; color: black;">
+	<h1>Toggle-able with slide animation, with hover, and the toggle-able section is not initiality displayed</h1>
+	<a style="color: inherit;" href="#" id='button3'>Hover Me!</a>
+	<ul id='section3'>
+	<li>This is awesome, right!</li>
+	<li>Here's the Code: <code>dropdownHover("Your Selector","Your Toggle-able Section",true,false);</code></li>
+	</ul>
+	<script type='text/javascript'>dropdownHover("#button3","#section3",true,false);</script>
+	</section>
+	<section style="background-color: green; color: white;">
+	<h1>To implement it into your own code, simply link jquery and dropdownpro in a script tag, like this:</h1>
+	<code>&#60;script type='text/javascript' src='jquery.min.js'&#62;&#60;/script&#62;</code><br>
+	<code>&#60;script type='text/javascript' src='dropdowns.js'&#62;&#60;/script&#62;</code>
+	<h1>Here how the function works => if you want hoverable, use: </h1>
+	<code>dropdownHover("Your Selector","Your Toggle-able Section",animation [true or false],initially displayed [true or false]);</code>
+	</section>
+</body>
+<script type='text/javascript'>dropdownHover(".skillz","#stuff",true,false);</script>
+</html>
